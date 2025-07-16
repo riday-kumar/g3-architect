@@ -49,7 +49,14 @@ main > section {
   margin-top: 130px;
 }
 
-/* header styles */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
 
 /* navbar related styles */
 .navbar {
@@ -111,11 +118,6 @@ main > section {
   max-width: 530px;
 }
 
-.feature-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-}
-
 #quic-list {
   font-weight: 600;
 }
@@ -130,6 +132,43 @@ main > section {
 
 /* Features you will enjoy */
 
+/* some facts */
+.some-facts h3 {
+  margin-bottom: 24px;
+}
+
+.some-facts p {
+  margin-bottom: 100px;
+  max-width: 540px;
+}
+
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 124px;
+}
+
+.fact-card {
+  border: 1px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.fact-number {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 5px 0 10px 0;
+}
+
+.fact-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar,
@@ -138,8 +177,14 @@ main > section {
     flex-direction: column;
   }
 
-  .team-img-container {
+  .team-img-container,
+  .facts-container {
     grid-template-columns: 1fr;
+  }
+
+  .facts-container {
+    justify-items: center;
+    gap: 30px;
   }
 
   .our-features {
@@ -154,5 +199,25 @@ main > section {
 
   .our-features {
     text-align: center;
+  }
+
+  .some-facts h3 {
+    text-align: center;
+  }
+
+  .some-facts p {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .facts-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .fact-card {
+    width: 340px;
   }
 }
