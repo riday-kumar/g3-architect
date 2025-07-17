@@ -40,12 +40,14 @@
   border: none;
 }
 
-main {
+main,
+footer {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-main > section {
+main > section,
+footer {
   margin-top: 130px;
 }
 
@@ -86,6 +88,10 @@ main > section {
 }
 
 /* banner related styles */
+.banner {
+  padding-bottom: 50px;
+}
+
 .banner-content {
   max-width: 850px;
   margin: 0 auto;
@@ -220,6 +226,14 @@ main > section {
 
 .sponsors-company img {
   filter: grayscale(100%);
+}
+
+/* footer */
+footer {
+  background: #fff4e7;
+  padding: 38px 0;
+  border-radius: 8px;
+  margin-bottom: 100px;
 }
 
 /* responsive media query (small device) */
