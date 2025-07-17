@@ -273,9 +273,30 @@ footer {
     margin-top: 20px;
     margin-left: 20px;
   }
+
+  footer {
+    margin-bottom: 50px;
+  }
+
+  main > section,
+  footer {
+    margin-top: 60px;
+  }
 }
 
+/* responsiveness for medium screen */
 @media screen and (min-width: 576px) and (max-width: 992px) {
+  main,
+  footer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  main > section,
+  footer {
+    margin-top: 80px;
+  }
+
   .teams,
   .features-enjoy {
     flex-direction: column;
@@ -307,7 +328,46 @@ footer {
   }
 
   #experience-badge {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: -75px;
+    margin-left: 1px;
+  }
+}
+
+/* responsiveness for large screen */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  main,
+  footer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  main > section,
+  footer {
+    margin: 80px 20px 0 20px;
+  }
+
+  .teams {
+    flex-direction: column;
+  }
+
+  .features-enjoy {
+    flex-direction: column;
+  }
+
+  #experience-badge {
+    margin-left: 0;
+  }
+
+  .some-facts {
+    text-align: center;
+  }
+
+  .some-facts p {
+    max-width: 100%;
+  }
+
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 }
